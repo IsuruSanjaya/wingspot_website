@@ -1661,17 +1661,22 @@ section,
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 0;
+  color: #060606;
+  padding: 2px;
+
 }
 
 .testimonials .testimonial-item h4 {
   font-size: 14px;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  font-weight: 800;
+  color: #625e5e;
   margin: 0;
 }
 
 .testimonials .testimonial-item p {
-  font-style: italic;
+  font-style: normal;
   margin: 0 auto 15px auto;
+  padding: 2px;
 }
 
 .testimonials .swiper-wrapper {

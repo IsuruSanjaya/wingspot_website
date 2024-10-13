@@ -24,6 +24,11 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+
+    <!-- Add this line in your head section -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMQoJ/Jj6QXH12lXEr0/qT9L3U7h1F9z2hLQ/9" crossorigin="anonymous">
+
+
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
@@ -43,33 +48,15 @@
         <ul>
           <li><a href="index.html#hero" class="active">Home</a></li>
           <li><a href="index.html#about">Project Scope</a></li>
-          <li><a href="index.html#features">Milestone</a></li>
           <li><a href="index.html#services">Technology</a></li>
+          <li><a href="index.html#milestone">Milestone</a></li>
           <li><a href="index.html#aboutus">About Us</a></li>
           <li><a href="index.html#contact">Contact Us</a></li>
-          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li> -->
-          <!-- <li><a href="index.html#contact">Contact</a></li> -->
+          
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <!-- <a class="btn-getstarted" href="index.html#about">Get Started</a> -->
 
     </div>
   </header>
@@ -84,11 +71,7 @@
       <div class="container text-center">
         <div class="d-flex flex-column justify-content-center align-items-center">
           <h1 data-aos="fade-up">Welcome to <span>Wingspot</span></h1>
-          <!-- <p data-aos="fade-up" data-aos-delay="100">Quickly start your project now and set the stage for success<br></p> -->
-          <!-- <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-
-            <a href="https://youtu.be/9BqRUytVr9o?si=TPqYpzftIRbN1MM2" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
-          </div> -->
+          
        
           <br>
           <br>
@@ -146,6 +129,51 @@
 
     </section><!-- /Featured Services Section -->
 
+     <!-- About Section -->
+     <section id="about" class="about section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <!-- <p class="who-we-are">Who We Are</p> -->
+            <h3>Literature Review</h3>
+            <p class="fst-italic">
+              How can we make monitoring endangered birds on remote islands more efficient,
+               considering the practical challenges of travel and accessibility?.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+            </ul>
+            <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
+            <div class="row gy-4">
+              <div class="col-lg-6">
+                <img src="assets/img/testimonials/teams.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-6">
+                <div class="row gy-4">
+                  <div class="col-lg-12">
+                    <img src="assets/img/about-company-2.jpg" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-lg-12">
+                    <img src="assets/img/about-company-3.jpg" class="img-fluid" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- /About Section -->
     <!-- About Section -->
     <section id="about" class="about section">
 
@@ -207,7 +235,7 @@
               <i class="bi bi-binoculars"></i>
               <div>
                 <h4>Monitoring and Detection of Endangered Birds Using Deep Learning Methods via an IoT Device</h4>
-                <p>
+                <p style="text-align: justify;">
                   Our solution uses a camouflaged IoT device combined with LoRa technology to monitor birds in real-time on remote islands. 
                   Powered by the YOLOv8 algorithm, the device can detect and identify bird species, sending information directly to a mobile app.
                   This approach helps protect endangered species by offering a reliable way to monitor wildlife in areas where traditional connectivity is limited.
@@ -221,9 +249,13 @@
               <i class="bi bi-box-seam"></i>
               <div>
                 <h4>Unidentified Bird Species Identification and Community Engagement</h4>
-                <p>
-                  Recusandae atque nihil. Delectus vitae non similique magnam molestiae sapiente similique
-                  tenetur aut voluptates sed voluptas ipsum voluptas.
+                <p style="text-align: justify;">
+                  The IoT device captures bird images and uses Few-Shot Learning with a CLIP model to classify them as either a 
+                  red-wattled lapwing, Indian thick-knee, black-winged stilt, or an unknown species. 
+                  If the bird is unknown, the image is analyzed by the OpenAI Multimodal Vision API for a possible name and uploaded to the 
+                  WingSpot Facebook group for further identification by bird researchers. Comments from the group are scraped using Apify, 
+                  and a Named Entity Recognition (NER) model analyzes the feedback. The final bird name is determined by comparing the API
+                   results with the community's input.
                 </p>
               </div>
             </div>
@@ -236,11 +268,12 @@
               <i class="bi bi-box-seam"></i>
               <div>
                 <h4>Multi-Modal Behavior Classification Using Audio Visual Data for Endangered Bird Species</h4>
-                <p>
-                  Our solution uses advanced video classification models,
-                  selecting the best transfer learning architectures to accurately identify bird behavior.
-                  We also integrate audio classification, combining both video and audio data to create a multi-modal model for deeper analysis.
-                  This fusion approach enhances the accuracy and reliability of bird behavior detection, offering valuable insights for wildlife monitoring.
+                <p style="text-align: justify;">
+                  Video footage of the Red Wattled Lapwing is split into frames and processed using an InceptionResNet CNN model,
+                   which classifies each frame and determines the dominant class based on the majority of frames. Simultaneously, 
+                   the audio from the video is analyzed using a combined YamNet and logistic regression model.
+                    The final output is generated by combining the video and audio results with weightages of 0.4 for video classification and 0.6 for
+                     audio classification.
                 </p>
               </div>
             </div>
@@ -251,9 +284,14 @@
               <i class="bi bi-brightness-high"></i>
               <div>
                 <h4>Automated Behavioral Monitoring and Hatching Success Prediction for Bird Conservation</h4>
-                <p>
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  Debitis nulla est maxime voluptas dolor aut.
+                <p style="text-align: justify;">
+                  This component focuses on automated behavioral monitoring and hatching success calculation for bird conservation. 
+                  Using the YOLOv8 object detection model, the system detects birds, eggs, and hatchlings from video footage, 
+                   spatial coordinates and bounding box labels for each detection. It calculates the proximity between birds and egg clusters,
+                    classifying behaviors such as incubation, attention, and unattended. The system tracks the duration and percentage of time spent in each 
+                    behavior across multiple frames. It also records the initial egg count and the final hatchling count to compute the egg-hatching success
+                     rate after 30 days. All results,  including behavior classifications, time durations, counts,
+                      and the hatching success rate, are displayed to the user for further analysis.
                 </p>
               </div>
             </div>
@@ -476,10 +514,69 @@
 
     </section><!-- /More Features Section -->
 
-   
-
-    
-
+    <section id="milestone" class="more-features section">
+      <div class="container section-title" data-aos="fade-up">
+          <h2>Milestone</h2>
+      </div><!-- End Section Title -->
+      <div class="timeline">
+          <div class="timeline-item" id="project-proposal">
+              <div class="timeline-content">
+                  <h3><i class="fas fa-file-alt"></i> Project Proposal</h3>
+                  <p>A Project Proposal is presented to potential sponsors or clients to receive funding or get your project approved.</p>
+              </div>
+          </div>
+          <div class="arrow">↓</div> <!-- Arrow indicator -->
+          <div class="timeline-item" id="progress-presentation-i">
+              <div class="timeline-content">
+                  <h3><i class="fas fa-chart-line"></i> Progress Presentation I</h3>
+                  <p>Progress Presentation I reviews the 50% completion status of the project.</p>
+              </div>
+          </div>
+          <div class="arrow">↓</div> <!-- Arrow indicator -->
+          <div class="timeline-item" id="research-paper">
+              <div class="timeline-content">
+                  <h3><i class="fas fa-book-open"></i> Research Paper</h3>
+                  <p>Describes what you contribute to existing knowledge, giving due recognition to all work that you referred to in making new knowledge.</p>
+              </div>
+          </div>
+          <div class="arrow">↓</div> <!-- Arrow indicator -->
+          <div class="timeline-item" id="progress-presentation-ii">
+              <div class="timeline-content">
+                  <h3><i class="fas fa-chart-bar"></i> Progress Presentation II</h3>
+                  <p>Progress Presentation II reviews the 90% completion status demonstration of the project.</p>
+              </div>
+          </div>
+          <div class="arrow">↓</div> <!-- Arrow indicator -->
+          <div class="timeline-item" id="website-assessment">
+              <div class="timeline-content">
+                  <h3><i class="fas fa-globe"></i> Website Assessment</h3>
+                  <p>The website helps to promote our research project and reveals all details related to the project.</p>
+              </div>
+          </div>
+          <div class="arrow">↓</div> <!-- Arrow indicator -->
+          <div class="timeline-item" id="logbook">
+              <div class="timeline-content">
+                  <h3><i class="fas fa-book"></i> Logbook</h3>
+                  <p>Status of the project is validated through the logbook. This also includes Status documents 1 & 2.</p>
+              </div>
+          </div>
+          <div class="arrow">↓</div> <!-- Arrow indicator -->
+          <div class="timeline-item" id="final-report">
+              <div class="timeline-content">
+                  <h3><i class="fas fa-file-alt"></i> Final Report</h3>
+                  <p>The final report evaluates the completed project done throughout the year.</p>
+              </div>
+          </div>
+          <div class="arrow">↓</div> <!-- Arrow indicator -->
+          <div class="timeline-item" id="final-presentation">
+              <div class="timeline-content">
+                  <h3><i class="fas fa-presentation"></i> Final Presentation & Viva</h3>
+                  <p>Viva is held individually to assess each member's contribution to the project.</p>
+              </div>
+          </div>
+      </div>
+  </section>
+  
     <section id="aboutus" class="testimonials section light-background">
 
       <!-- Section Title -->
@@ -492,41 +589,40 @@
     
         <div class="row">
     
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="testimonial-item">
               
               <div class="profile mt-auto">
-                <img src="assets/img/testimonials/testimonials-1.jpg" width="250" alt="">
+                <img src="assets/img/testimonials/samadhi.jfif" width="250" alt="">
                 <h3>Mr. Samadhi Rathnayake</h3>
                 <h4> SUPERVISOR  </h4>
-                <h4>Sri Lanka Institute of Information Technology </h4>
+                <!-- <h4>Sri Lanka Institute of Information Technology </h4> -->
 
               </div>
               <p>
-                Faculty of Computing  Information Technology  </p>
+                Sri Lanka Institute of Information Technology  </p>
               
             </div>
           </div><!-- End testimonial item -->
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="testimonial-item">
               
               <div class="profile mt-auto">
-                <img src="assets/img/testimonials/testimonials-1.jpg" width="250" alt="">
+                <img src="assets/img/testimonials/nelumsir.jfif" width="250" alt="">
                 <h3>Mr. Nelum amarasena</h3>
                 <h4>CO - SUPERVISOR</h4>
 
               </div>
               <p>
-                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-              </p>
+                Sri Lanka Institute of Information Technology              </p>
               
             </div>
           </div><!-- End testimonial item -->
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="testimonial-item">
               
               <div class="profile mt-auto">
-                <img src="assets/img/testimonials/testimonials-1.jpg" width="250" alt="">
+                <img src="assets/img/testimonials/devaka.jpeg" width="250" alt="">
                 <h3>Prof. Devaka K Weerakoon
                 </h3>
                 <h4>EXTERNAL SUPERVISOR</h4>
@@ -534,6 +630,21 @@
               <p>
                 Head of the Department of Zoology 
                 and Environmental Science of University of colombo 
+                              </p>
+              
+            </div>
+          </div><!-- End testimonial item -->
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="testimonial-item">
+              
+              <div class="profile mt-auto">
+                <img src="assets/img/testimonials/samitha.jpeg" width="250" alt="">
+                <h3>Mr. Samitha VidhanaarachchI
+                </h3>
+                <h4>EXTERNAL SUPERVISOR</h4>
+              </div>
+              <p>
+                Sri Lanka Institute of Information Technology   
                               </p>
               
             </div>
@@ -571,7 +682,7 @@
             <div class="testimonial-item">
               
               <div class="profile mt-auto">
-                <img src="assets/img/testimonials/testimonials-1.jpg" width="250" alt="">
+                <img src="assets/img/testimonials/vijini.JPG" width="250" alt="">
                 <h3>V.L.K Tennekoon</h3>
                 <h4>Group Member</h4>
               </div>
@@ -614,7 +725,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">

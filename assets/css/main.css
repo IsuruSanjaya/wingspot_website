@@ -1677,7 +1677,9 @@ section,
   font-style: normal;
   margin: 0 auto 15px auto;
   padding: 2px;
+
 }
+
 
 .testimonials .swiper-wrapper {
   height: auto;
@@ -1950,4 +1952,41 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline-item {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px 0;
+  position: relative;
+}
+
+.timeline-content {
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 20px;
+  height: calc(100% - 40px);
+  width: 4px;
+  background-color: #007bff;
+}
+
+
+
+.arrow {
+  text-align: center;
+  font-size: 24px; /* Adjust size for visibility */
+  margin: 10px 0; /* Add margin for spacing */
+  color: #007bff; /* Color of the arrows */
 }

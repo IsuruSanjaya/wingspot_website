@@ -32,30 +32,42 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+
 </head>
 
-<body class="index-page">
+<body style="background-color: #d4edda;">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <img src="assets/img/logo.png" alt="">
+        <img src="assets/img/logo2 (1).png" alt="" width="100px" height="200px">
         <h1 class="sitename">Wingspot</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html#hero" class="active">Home</a></li>
-          <li><a href="index.html#about">Project Scope</a></li>
-          <li><a href="index.html#services">Technology</a></li>
+          <li class="dropdown">
+            <a href="index.html#about">Domain <i class="bi bi-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#Literature">Literature Survey</a></li>
+              <li><a href="#research-gap">Research Gap</a></li>
+              <li><a href="#researchproblem">Research Problem</a></li>
+              <li><a href="#Objectives">Research Objectives</a></li>
+              <li><a href="#methodology">Methodology</a></li>
+              <li><a href="#technologies">Technologies Used</a></li>
+            </ul>
+          </li>
           <li><a href="index.html#milestone">Milestone</a></li>
+          <li><a href="index.html#documents">Documents</a></li>
+          <li><a href="index.html#presentation">Presentations</a></li>
           <li><a href="index.html#aboutus">About Us</a></li>
           <li><a href="index.html#contact">Contact Us</a></li>
-          
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+      
 
 
     </div>
@@ -85,8 +97,8 @@
 
     </section><!-- /Hero Section -->
 
-    <!-- Featured Services Section -->
-    <section id="featured-services" class="featured-services section light-background">
+
+    <!-- <section id="featured-services" class="featured-services section light-background">
 
       <div class="container">
 
@@ -101,7 +113,7 @@
               </div>
             </div>
           </div>
-          <!-- End Service Item -->
+          
 
           <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item d-flex">
@@ -111,7 +123,7 @@
                 <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exa</p>
               </div>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
           <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item d-flex">
@@ -121,82 +133,127 @@
                 <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
               </div>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
         </div>
 
       </div>
 
-    </section><!-- /Featured Services Section -->
+    </section> -->
 
      <!-- About Section -->
-     <section id="about" class="about section">
+     <section id="Literature" class="about section">
 
       <div class="container">
 
         <div class="row gy-4">
 
-          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-8 content" data-aos="fade-up" data-aos-delay="100">
             <!-- <p class="who-we-are">Who We Are</p> -->
-            <h3>Literature Review</h3>
-            <p class="fst-italic">
-              How can we make monitoring endangered birds on remote islands more efficient,
-               considering the practical challenges of travel and accessibility?.
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
-            </ul>
-            <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-          </div>
+            <h3>Literature Survey</h3>
+            <p style="text-align: justify;">
+              Effective conservation of avian species, particularly in isolated and ecologically sensitive regions such as Adam’s Bridge in Sri Lanka, requires innovative monitoring and identification methods. 
+              Existing research has leveraged Internet of Things (IoT), LoRa, machine learning, and computer vision technologies to address the challenges posed by traditional methods.
+              <br>              <br>
 
-          <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
+              The use of IoT and LoRa (Long Range) technologies in ecological monitoring has proven highly effective in overcoming the limitations of remote monitoring.
+               LoRa’s ability to transmit data over long distances with low power consumption has been demonstrated in various domains, including environmental monitoring, smart agriculture, and industrial automation.
+                For instance, studies have shown that LoRa-based networks efficiently facilitate real-time data collection even in regions with limited internet connectivity, 
+                making them a suitable choice for wildlife monitoring in remote areas [1][2]. 
+                Additionally, the integration of deep learning techniques like YOLO (You Only Look Once) has enhanced the accuracy of object detection in such applications,
+                 enabling precise identification of bird species and behavior in real-time [3].
+                 <br>              <br>
+
+                 In regions like Adam’s Bridge, the identification of both known and unknown bird species presents a significant challenge due to limited access and biodiversity complexity.
+                  Previous research on few-shot learning and zero-shot learning has shown promising results in classifying unseen categories of bird species by leveraging minimal training data. For example, large-scale studies have successfully applied zero-shot learning for classifying zoological illustrations, while community-driven projects like eBird have employed citizen science approaches to enhance biodiversity research through public participation and data sharing [4][5].
+                  However, a gap remains in developing methods that facilitate collaborative identification of unknown bird species using social media platforms and comment analysis through natural language processing (NLP) [6].
+                  <br>              <br>
+
+                  The analysis of avian behavior is crucial for understanding how environmental changes impact species and for developing effective conservation strategies. Traditional methods for observing bird behavior have often been manual, labor-intensive, and susceptible to human error, leading to inconsistencies in data collection. To address these challenges, recent studies have introduced multi-modal classification systems that integrate audio and visual data to improve behavioral analysis. For instance, Lin et al. developed a dual feature-rates deep fusion network, combining audio and visual cues to enhance bird posture detection and behavior recognition [7]. Similar multi-modal fusion techniques have also been applied to analyze complex flocking behaviors and environmental influences,
+                   demonstrating the potential for integrated data approaches in advancing wildlife research [8].
+                   <br>              <br>
+
+                   Recent advancements in deep learning and computer vision have significantly improved the monitoring of avian behavior, particularly in areas like incubation and hatching success, which have traditionally relied on labor-intensive manual observation methods prone to human error [9]. YOLO models, such as YOLOv5, have shown notable effectiveness in real-time object detection, offering high-speed processing and accuracy in identifying bird species in complex environments [10][11]. However, while most research has focused primarily on species identification, behavior classification and reproductive success analysis remain underexplored. Studies using machine learning in animal behavior, such as those by Valletta et al. and Rivas et al.,
+                    have often overlooked integrating behavior classification with reproductive outcomes, highlighting an opportunity for more automated and precise analysis using deep learning [12][13].
+                    <br>              <br>
+
+                    In conclusion, the integration of IoT, LoRa, machine learning, and computer vision technologies presents a comprehensive solution to address the challenges of avian conservation. These approaches not only enable remote monitoring and real-time behavioral analysis but also foster community involvement in identifying and protecting endangered bird species. 
+                    By combining technological advancements with collaborative efforts, this research contributes to the overarching goal of preserving fragile ecosystems and supporting biodiversity conservation.
+            </p>
+            <ul style="text-align: justify;">
+              <li><i ></i> <span>1.	P. Chitrakar, Y. Biradavolu and S. S. Yellampalli, "GPS and LoRa module Based Safety Alert system," 2021 IEEE International Conference on RFID Technology and Applications (RFID-TA), Delhi, India, 2021, pp. 256-259.</span></li>
+              <li><i ></i> <span>2.	L. Stork, A. Weber, J. v. den Herik, A. Plaat, F. Verbeek and K. Wolstencroft, "Large-scale zero-shot learning in the wild: Classifying zoological illustrations," Ecological Informatics, vol. 62, May 2021.</span></li>
+              <li><i ></i> <span>3.	S. Schneider, G. W. Taylor, and S. C. Kremer, "Deep learning object detection methods for ecological camera trap data," in Proc. 2018 15th Conf. Comput. Robot Vis. (CRV), Toronto, ON, Canada, 2018, pp. 321-328.</span></li>
+
+              <li><i></i> <span>4.	A. Fink, D. Dame, B. Sullivan and C. Wood, "eBird: A human/computer learning network for biodiversity conservation and research," in 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (KDD '20), 2020.</span></li>
+              <li><i ></i> <span>5.	L. Li, J. Ren, and Q. Zhu, "On the application of LoRa LPWAN technology in Sailing Monitoring System," 2017 13th Annual Conference on Wireless On-Demand Network Systems and Services, WONS 2017 - Proceedings, pp. 77–80, 2017.</span></li>
+              <li><i ></i> <span>6.	Various contributors / Macaulay Library at the Cornell Lab of Ornithology. [Online]. Available: https://ebird.org/species/rewlap1.</span></li>
+
+              <li><i ></i> <span>7.	Z. Lin, Y. Luo, and L. Wang, "DF2-Net: Dual feature-rates deep fusion network for bird posture recognition with a transposed non-local module," IEEE Transactions on Multimedia, vol. 24, pp. 1015-1025, 2022.</span></li>
+              <li><i></i> <span>8.	S. Steen, J. Zhang, and M. Albayrak, "Multi-modal fusion for recognizing goose flocking behaviors using acoustic and video-based classifiers," IEEE Transactions on Systems, Man, and Cybernetics: Systems, vol. 43, no. 3, pp. 889-900, 2013.</span></li>
+              <li><i ></i> <span>9.	J. Altmann, "Observational study of behavior: sampling methods," Behaviour, vol. 49, no. 3-4, pp. 227-266, 1974.</span></li>
+              <li><i ></i> <span>10.	W. Xu, Y. Fu, W. Xie, and I. Y. H. Gu, "Real-time bird species detection using YOLOv5," in Proc. 2021 IEEE Int. Conf. Image Process. (ICIP), Anchorage, AK, USA, 2021, pp. 1894-1898.</span></li>
+              <li><i ></i> <span>11.	S. Schneider, G. W. Taylor, and S. C. Kremer, "Deep learning object detection methods for ecological camera trap data," in Proc. 2018 15th Conf. Comput. Robot Vis. (CRV), Toronto, ON, Canada, 2018, pp. 321-328.</span></li>
+              <li><i ></i> <span>12.	J. J. Valletta, C. Torney, M. Kings, A. Thornton, and J. Madden, "Applications of machine learning in animal behaviour studies," Anim. Behav., vol. 124, pp. 203-220, Dec. 2017.</span></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 about-images" data-aos="fade-up" data-aos-delay="200">
             <div class="row gy-4">
-              <div class="col-lg-6">
-                <img src="assets/img/testimonials/teams.jpg" class="img-fluid" alt="">
-              </div>
+             
               <div class="col-lg-6">
                 <div class="row gy-4">
                   <div class="col-lg-12">
-                    <img src="assets/img/about-company-2.jpg" class="img-fluid" alt="">
+                    <img src="assets/img/mannar.jpg" width="500px" alt="">
                   </div>
                   <div class="col-lg-12">
-                    <img src="assets/img/about-company-3.jpg" class="img-fluid" alt="">
+                    <img src="assets/img/bird1.jpg" width="500px" alt="">
                   </div>
                 </div>
               </div>
             </div>
 
           </div>
+          
 
         </div>
 
       </div>
     </section><!-- /About Section -->
     <!-- About Section -->
-    <section id="about" class="about section">
+    <section id="researchproblem" class="about section">
 
       <div class="container">
 
         <div class="row gy-4">
 
-          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-            <p class="who-we-are">Who We Are</p>
+          <div class="col-lg-8 content" data-aos="fade-up" data-aos-delay="100">
             <h3>Research Problem & Solution</h3>
-            <p class="fst-italic">
+            <h4>Research Problem</h4>
+
+            <p style="text-align: justify;">
               How can we make monitoring endangered birds on remote islands more efficient,
                considering the practical challenges of travel and accessibility?.
             </p>
-            <ul>
+            <p style="text-align: justify;">
+              How can we prevent the unintended introduction of foreign species during monitoring, ensuring the safety of the endangered birds?
+            </p>
+            <p style="text-align: justify;">
+              How can we accurately identify the species and birds who have never been seen before ?
+            </p>
+            <p style="text-align: justify;">
+              How can we observe nesting and egg-laying behaviour without causing disruptions or altering their natural patterns?
+            </p>
+            <h4>Research Solution</h4>
+
+            <!-- <ul>
               <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
               <li><i class="bi bi-check-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
               <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
             </ul>
-            <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+            <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a> -->
           </div>
 
-          <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
+          <!-- <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
             <div class="row gy-4">
               <div class="col-lg-6">
                 <img src="assets/img/testimonials/teams.jpg" class="img-fluid" alt="">
@@ -213,7 +270,7 @@
               </div>
             </div>
 
-          </div>
+          </div> -->
 
         </div>
 
@@ -222,82 +279,12 @@
 
 
     <!-- Features Section -->
-    <section id="features" class="features section">
+    <section id="Objectives" class="features section">
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Research Objectives</h2>
       </div><!-- End Section Title -->
     
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 d-flex align-items-stretch">
-            <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
-              <i class="bi bi-binoculars"></i>
-              <div>
-                <h4>Monitoring and Detection of Endangered Birds Using Deep Learning Methods via an IoT Device</h4>
-                <p style="text-align: justify;">
-                  Our solution uses a camouflaged IoT device combined with LoRa technology to monitor birds in real-time on remote islands. 
-                  Powered by the YOLOv8 algorithm, the device can detect and identify bird species, sending information directly to a mobile app.
-                  This approach helps protect endangered species by offering a reliable way to monitor wildlife in areas where traditional connectivity is limited.
-                </p>
-              </div>
-            </div>
-          </div>
-    
-          <div class="col-lg-6 d-flex align-items-stretch">
-            <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
-              <i class="bi bi-box-seam"></i>
-              <div>
-                <h4>Unidentified Bird Species Identification and Community Engagement</h4>
-                <p style="text-align: justify;">
-                  The IoT device captures bird images and uses Few-Shot Learning with a CLIP model to classify them as either a 
-                  red-wattled lapwing, Indian thick-knee, black-winged stilt, or an unknown species. 
-                  If the bird is unknown, the image is analyzed by the OpenAI Multimodal Vision API for a possible name and uploaded to the 
-                  WingSpot Facebook group for further identification by bird researchers. Comments from the group are scraped using Apify, 
-                  and a Named Entity Recognition (NER) model analyzes the feedback. The final bird name is determined by comparing the API
-                   results with the community's input.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div><!-- End Row -->
-    
-        <div class="row mt-4">
-          <div class="col-lg-6 d-flex align-items-stretch">
-            <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-box-seam"></i>
-              <div>
-                <h4>Multi-Modal Behavior Classification Using Audio Visual Data for Endangered Bird Species</h4>
-                <p style="text-align: justify;">
-                  Video footage of the Red Wattled Lapwing is split into frames and processed using an InceptionResNet CNN model,
-                   which classifies each frame and determines the dominant class based on the majority of frames. Simultaneously, 
-                   the audio from the video is analyzed using a combined YamNet and logistic regression model.
-                    The final output is generated by combining the video and audio results with weightages of 0.4 for video classification and 0.6 for
-                     audio classification.
-                </p>
-              </div>
-            </div>
-          </div>
-    
-          <div class="col-lg-6 d-flex align-items-stretch">
-            <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-brightness-high"></i>
-              <div>
-                <h4>Automated Behavioral Monitoring and Hatching Success Prediction for Bird Conservation</h4>
-                <p style="text-align: justify;">
-                  This component focuses on automated behavioral monitoring and hatching success calculation for bird conservation. 
-                  Using the YOLOv8 object detection model, the system detects birds, eggs, and hatchlings from video footage, 
-                   spatial coordinates and bounding box labels for each detection. It calculates the proximity between birds and egg clusters,
-                    classifying behaviors such as incubation, attention, and unattended. The system tracks the duration and percentage of time spent in each 
-                    behavior across multiple frames. It also records the initial egg count and the final hatchling count to compute the egg-hatching success
-                     rate after 30 days. All results,  including behavior classifications, time durations, counts,
-                      and the hatching success rate, are displayed to the user for further analysis.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div><!-- End Row -->
-      </div>
     </section><!-- /Features Section -->
     
     <!-- Features Details Section -->
@@ -308,17 +295,17 @@
         <div class="row gy-4 justify-content-between features-item">
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/features-1.jpg" class="img-fluid" alt="">
+            <img src="assets/img/features-1.jpg"  alt="" width="500px" height="400px">
           </div>
 
           <div class="col-lg-5 d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
             <div class="content">
-              <h3>Corporis temporibus maiores provident</h3>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+              <h3>Monitoring and Detection of Endangered Birds Using Deep Learning Methods via an IoT Device</h3>
+              <p style="text-align: justify;">
+                Our solution uses a camouflaged IoT device combined with LoRa technology to monitor birds in real-time on remote islands. Powered by the YOLOv8 algorithm, the device can detect and identify bird species, sending information directly to a mobile app.
+                 This approach helps protect endangered species by offering a reliable way to monitor wildlife in areas where traditional connectivity is limited.
               </p>
-              <a href="#" class="btn more-btn">Learn More</a>
+              <!-- <a href="#" class="btn more-btn">Learn More</a> -->
             </div>
           </div>
 
@@ -329,23 +316,54 @@
           <div class="col-lg-5 d-flex align-items-center order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
 
             <div class="content">
-              <h3>Neque ipsum omnis sapiente quod quia dicta</h3>
-              <p>
-                Quidem qui dolore incidunt aut. In assumenda harum id iusto lorena plasico mares
-              </p>
-              <ul>
-                <li><i class="bi bi-easel flex-shrink-0"></i> Et corporis ea eveniet ducimus.</li>
-                <li><i class="bi bi-patch-check flex-shrink-0"></i> Exercitationem dolorem sapiente.</li>
-                <li><i class="bi bi-brightness-high flex-shrink-0"></i> Veniam quia modi magnam.</li>
-              </ul>
+              <h3>Unidentified Bird Species Identification and Community Engagement</h3>
+              <p style="text-align: justify;">
+                The IoT device captures bird images and uses Few-Shot Learning with a CLIP model to classify them as either a red-wattled lapwing, Indian thick-knee, black-winged stilt, or an unknown species. If the bird is unknown, the image is analyzed by the OpenAI Multimodal Vision API for a possible name and uploaded to the WingSpot Facebook group for further identification by bird researchers. Comments from the group are scraped using Apify, and a Named
+                 Entity Recognition (NER) model analyzes the feedback. The final bird name is determined by comparing the API results with the community's input.              </p>
+             
               <p></p>
-              <a href="#" class="btn more-btn">Learn More</a>
+              <!-- <a href="#" class="btn more-btn">Learn More</a> -->
             </div>
 
           </div>
 
           <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/features-2.jpg" class="img-fluid" alt="">
+            <img src="assets/img/bird2.jpg"  width="500px" height="400px">
+          </div>
+
+        </div><!-- Features Item -->
+        <div class="row gy-4 justify-content-between features-item">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/bird1.jpg"  width="500px" height="400px">
+          </div>
+
+          <div class="col-lg-5 d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+              <h3>Multi-Modal Behavior Classification Using Audio Visual Data for Endangered Bird Species</h3>
+              <p style="text-align: justify;">
+                Video footage of the Red Wattled Lapwing is split into frames and processed using an InceptionResNet CNN model, which classifies each frame and determines the dominant class based on the majority of frames. Simultaneously, the audio from the video is analyzed using a combined YamNet and logistic regression model. The final output is generated by combining the video and audio results with weightages of 0.4 for video classification and 0.6 for audio classification
+              </p>
+              <!-- <a href="#" class="btn more-btn">Learn More</a> -->
+            </div>
+          </div>
+
+        </div><!-- Features Item -->
+        <div class="row gy-4 justify-content-between features-item">
+
+          <div class="col-lg-5 d-flex align-items-center order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="content">
+              <h3>Automated Behavioral Monitoring and Hatching Success Prediction for Bird Conservation</h3>
+              <p style="text-align: justify;">
+                Automated behavioral monitoring and hatching success calculation for bird conservation. Using the YOLOv8 object detection model, the system detects birds, eggs, and hatchlings from video footage, spatial coordinates and bounding box labels for each detection. It calculates the proximity between birds and egg clusters, classifying behaviors such as incubation, attention, and unattended. The system tracks the duration and percentage of time spent in each behavior across multiple frames. It also records the initial egg count and the final hatchling count to compute the egg-hatching success rate after 30 days. All results, including behavior classifications, time durations, counts, and the hatching success rate, are displayed to the user for further analysis.              <p></p>
+              <!-- <a href="#" class="btn more-btn">Learn More</a> -->
+            </div>
+
+          </div>
+
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/img/egg.png"  width="500px" height="400px">
           </div>
 
         </div><!-- Features Item -->
@@ -355,7 +373,7 @@
     </section><!-- /Features Details Section -->
 
     <!-- Services Section -->
-    <section id="services" class="services section light-background">
+    <section id="technologies" class="services section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -455,127 +473,233 @@
     </section><!-- /Services Section -->
     
 
-    <!-- More Features Section -->
-    <section id="more-features" class="more-features section">
-
-      <div class="container">
-
-        <div class="row justify-content-around gy-4">
-
-          <div class="col-lg-6 d-flex flex-column justify-content-center order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
-            <h3>Enim quis est voluptatibus aliquid consequatur</h3>
-            <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi</p>
-
-            <div class="row">
-
-              <div class="col-lg-6 icon-box d-flex">
-                <i class="bi bi-easel flex-shrink-0"></i>
-                <div>
-                  <h4>Lorem Ipsum</h4>
-                  <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias </p>
-                </div>
-              </div><!-- End Icon Box -->
-
-              <div class="col-lg-6 icon-box d-flex">
-                <i class="bi bi-patch-check flex-shrink-0"></i>
-                <div>
-                  <h4>Nemo Enim</h4>
-                  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiise</p>
-                </div>
-              </div><!-- End Icon Box -->
-
-              <div class="col-lg-6 icon-box d-flex">
-                <i class="bi bi-brightness-high flex-shrink-0"></i>
-                <div>
-                  <h4>Dine Pad</h4>
-                  <p>Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit</p>
-                </div>
-              </div><!-- End Icon Box -->
-
-              <div class="col-lg-6 icon-box d-flex">
-                <i class="bi bi-brightness-high flex-shrink-0"></i>
-                <div>
-                  <h4>Tride clov</h4>
-                  <p>Est voluptatem labore deleniti quis a delectus et. Saepe dolorem libero sit</p>
-                </div>
-              </div><!-- End Icon Box -->
-
+   
+   
+  <section id="milestone" class="more-features section">
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Milestone</h2>
+    </div><!-- End Section Title -->
+    <div class="timeline">
+        <div class="timeline-item" id="project-proposal">
+            <div class="timeline-circle">1</div>
+            <div class="timeline-content">
+                <div class="timeline-date">February 2024</div>
+                <h3><i class="fas fa-file-alt"></i> Project Proposal</h3>
+                <p>A Project Proposal is presented to potential sponsors or clients to receive funding or get your project approved.</p>
             </div>
-
-          </div>
-
-          <div class="features-image col-lg-5 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/features-3.jpg" alt="">
-          </div>
-
         </div>
-
-      </div>
-
-    </section><!-- /More Features Section -->
-
-    <section id="milestone" class="more-features section">
-      <div class="container section-title" data-aos="fade-up">
-          <h2>Milestone</h2>
-      </div><!-- End Section Title -->
-      <div class="timeline">
-          <div class="timeline-item" id="project-proposal">
-              <div class="timeline-content">
-                  <h3><i class="fas fa-file-alt"></i> Project Proposal</h3>
-                  <p>A Project Proposal is presented to potential sponsors or clients to receive funding or get your project approved.</p>
-              </div>
-          </div>
-          <div class="arrow">↓</div> <!-- Arrow indicator -->
-          <div class="timeline-item" id="progress-presentation-i">
-              <div class="timeline-content">
-                  <h3><i class="fas fa-chart-line"></i> Progress Presentation I</h3>
-                  <p>Progress Presentation I reviews the 50% completion status of the project.</p>
-              </div>
-          </div>
-          <div class="arrow">↓</div> <!-- Arrow indicator -->
-          <div class="timeline-item" id="research-paper">
-              <div class="timeline-content">
-                  <h3><i class="fas fa-book-open"></i> Research Paper</h3>
-                  <p>Describes what you contribute to existing knowledge, giving due recognition to all work that you referred to in making new knowledge.</p>
-              </div>
-          </div>
-          <div class="arrow">↓</div> <!-- Arrow indicator -->
-          <div class="timeline-item" id="progress-presentation-ii">
-              <div class="timeline-content">
-                  <h3><i class="fas fa-chart-bar"></i> Progress Presentation II</h3>
-                  <p>Progress Presentation II reviews the 90% completion status demonstration of the project.</p>
-              </div>
-          </div>
-          <div class="arrow">↓</div> <!-- Arrow indicator -->
-          <div class="timeline-item" id="website-assessment">
-              <div class="timeline-content">
-                  <h3><i class="fas fa-globe"></i> Website Assessment</h3>
-                  <p>The website helps to promote our research project and reveals all details related to the project.</p>
-              </div>
-          </div>
-          <div class="arrow">↓</div> <!-- Arrow indicator -->
-          <div class="timeline-item" id="logbook">
-              <div class="timeline-content">
-                  <h3><i class="fas fa-book"></i> Logbook</h3>
-                  <p>Status of the project is validated through the logbook. This also includes Status documents 1 & 2.</p>
-              </div>
-          </div>
-          <div class="arrow">↓</div> <!-- Arrow indicator -->
-          <div class="timeline-item" id="final-report">
-              <div class="timeline-content">
-                  <h3><i class="fas fa-file-alt"></i> Final Report</h3>
-                  <p>The final report evaluates the completed project done throughout the year.</p>
-              </div>
-          </div>
-          <div class="arrow">↓</div> <!-- Arrow indicator -->
-          <div class="timeline-item" id="final-presentation">
-              <div class="timeline-content">
-                  <h3><i class="fas fa-presentation"></i> Final Presentation & Viva</h3>
-                  <p>Viva is held individually to assess each member's contribution to the project.</p>
-              </div>
+        <div class="timeline-item" id="progress-presentation-i">
+            <div class="timeline-circle">2</div>
+            <div class="timeline-content">
+                <div class="timeline-date">May 2024</div>
+                <h3><i class="fas fa-chart-line"></i> Progress Presentation 1</h3>
+                <p>Progress Presentation I reviews the 50% completion status of the project.</p>
+            </div>
+        </div>
+        <div class="timeline-item" id="research-paper">
+            <div class="timeline-circle">3</div>
+            <div class="timeline-content">
+                <div class="timeline-date">August 2024</div>
+                <h3><i class="fas fa-book-open"></i> Research Paper</h3>
+                <p>Describes what you contribute to existing knowledge, giving due recognition to all work that you referred to in making new knowledge.</p>
+            </div>
+        </div>
+        <div class="timeline-item" id="research-paper">
+          <div class="timeline-circle">4</div>
+          <div class="timeline-content">
+              <div class="timeline-date">September 2024</div>
+              <h3><i class="fas fa-book-open"></i> Progress presentation 2</h3>
+              <p>Describes what you contribute to existing knowledge, giving due recognition to all work that you referred to in making new knowledge.</p>
           </div>
       </div>
-  </section>
+      <div class="timeline-item" id="research-paper">
+        <div class="timeline-circle">5</div>
+        <div class="timeline-content">
+            <div class="timeline-date">October 2024</div>
+            <h3><i class="fas fa-book-open"></i> Website assessment</h3>
+            <p>Describes what you contribute to existing knowledge, giving due recognition to all work that you referred to in making new knowledge.</p>
+        </div>
+    </div>
+    <div class="timeline-item" id="research-paper">
+      <div class="timeline-circle">6</div>
+      <div class="timeline-content">
+          <div class="timeline-date">November 2024</div>
+          <h3><i class="fas fa-book-open"></i> Logbook</h3>
+          <p>Describes what you contribute to existing knowledge, giving due recognition to all work that you referred to in making new knowledge.</p>
+      </div>
+  </div>
+  <div class="timeline-item" id="research-paper">
+    <div class="timeline-circle">7</div>
+    <div class="timeline-content">
+        <div class="timeline-date">September 2024</div>
+        <h3><i class="fas fa-book-open"></i> Final Report </h3>
+        <p>Describes what you contribute to existing knowledge, giving due recognition to all work that you referred to in making new knowledge.</p>
+    </div>
+</div>
+<div class="timeline-item" id="research-paper">
+  <div class="timeline-circle">8</div>
+  <div class="timeline-content">
+      <div class="timeline-date">October 2024</div>
+      <h3><i class="fas fa-book-open"></i> Final presentation & viva</h3>
+      <p>Describes what you contribute to existing knowledge, giving due recognition to all work that you referred to in making new knowledge.</p>
+  </div>
+</div>
+      
+    </div>
+</section>
+  
+
+  <div id="documents" class="container my-5">
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Documents</h2>
+  </div><!-- End Section Title -->
+    <div class="row justify-content-center">
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100 text-center shadow-sm">
+          <div class="card-body">
+            <h4 class="card-title">Project Charter Confirmation</h4>
+            <div class="icon mb-3">
+              <img src="assets/img/file.png" alt="document icon">
+            </div>
+            <a href="https://drive.google.com/file/d/1IuWU7E5JXlGY_6ZY1Pb_rNpZRMt06wjI/view?usp=sharing" class="btn btn-primary">Download</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100 text-center shadow-sm">
+          <div class="card-body">
+            <h4 class="card-title">Topic Assessments</h4>
+            <div class="icon mb-3">
+              <img src="assets/img/file.png" alt="document icon">
+            </div>
+            <a href="https://drive.google.com/file/d/1pnOLsF2uIDcNuYRxnDiExrnnG4oQsC-Y/view?usp=sharing" class="btn btn-primary">Download</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100 text-center shadow-sm">
+          <div class="card-body">
+            <h4 class="card-title">Project Proposal</h4>
+            <div class="icon mb-3">
+              <img src="assets/img/file.png" alt="document icon">
+            </div>
+            <a href="https://drive.google.com/drive/folders/1HcakIGziW2yKG4dbdWUhqvavD15c9ttS?usp=drive_link" class="btn btn-primary">Download</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100 text-center shadow-sm">
+          <div class="card-body">
+            <h4 class="card-title">Status documents - 1</h4>
+            <div class="icon mb-3">
+              <img src="assets/img/file.png" alt="document icon">
+            </div>
+            <a href="https://drive.google.com/drive/folders/1Eu7lmP_FOCF9YnY7ZaAYDQWsa37zyad2?usp=sharing" class="btn btn-primary">Download</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100 text-center shadow-sm">
+          <div class="card-body">
+            <h4 class="card-title">Status documents - 2</h4>
+            <div class="icon mb-3">
+              <img src="assets/img/file.png" alt="document icon">
+            </div>
+            <a href="https://drive.google.com/drive/folders/15-GzQUVs9ceDaIhSG4EKdi6gdrNEkkoK?usp=sharing" class="btn btn-primary">Download</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100 text-center shadow-sm">
+          <div class="card-body">
+            <h4 class="card-title">Final Report</h4>
+            <div class="icon mb-3">
+              <img src="assets/img/file.png" alt="document icon">
+            </div>
+            <a href="https://drive.google.com/file/d/1mYv6LJpU_Bj0sQ5W7TNO5dQOY8SRukl6/view?usp=sharing" class="btn btn-primary">Download</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100 text-center shadow-sm">
+          <div class="card-body">
+            <h4 class="card-title">Research Papers</h4>
+            <div class="icon mb-3">
+              <img src="assets/img/file.png" alt="document icon">
+            </div>
+            <a href="https://drive.google.com/drive/folders/12kZRorjN0_HrZbD7bOb1jPWnyVccN77-?usp=drive_link" class="btn btn-primary">Download</a>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
+  <br>
+  <div id="presentation" class="container my-5">
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Presentation</h2>
+  </div><!-- End Section Title -->
+    <div class="row justify-content-center">
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100 text-center shadow-sm">
+          <div class="card-body">
+            <h4 class="card-title">Proposal presentation</h4>
+            <div class="icon mb-3">
+              <img src="assets/img/presentation.png" alt="document icon">
+            </div>
+            <a href="https://drive.google.com/file/d/1IuWU7E5JXlGY_6ZY1Pb_rNpZRMt06wjI/view?usp=sharing" class="btn btn-primary">Download</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100 text-center shadow-sm">
+          <div class="card-body">
+            <h4 class="card-title">Progress presentation-1</h4>
+            <div class="icon mb-3">
+              <img src="assets/img/presentation.png" alt="document icon">
+            </div>
+            <a href="https://drive.google.com/file/d/1pnOLsF2uIDcNuYRxnDiExrnnG4oQsC-Y/view?usp=sharing" class="btn btn-primary">Download</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100 text-center shadow-sm">
+          <div class="card-body">
+            <h4 class="card-title">Progress Presentation-2</h4>
+            <div class="icon mb-3">
+              <img src="assets/img/presentation.png" alt="document icon">
+            </div>
+            <a href="https://drive.google.com/drive/folders/1HcakIGziW2yKG4dbdWUhqvavD15c9ttS?usp=drive_link" class="btn btn-primary">Download</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100 text-center shadow-sm">
+          <div class="card-body">
+            <h4 class="card-title">Final presentation</h4>
+            <div class="icon mb-3">
+              <img src="assets/img/presentation.png" alt="document icon">
+            </div>
+            <a href="https://drive.google.com/drive/folders/1Eu7lmP_FOCF9YnY7ZaAYDQWsa37zyad2?usp=sharing" class="btn btn-primary">Download</a>
+          </div>
+        </div>
+      </div>
+  
+     
+  
+    </div>
+  </div>
+  
   
     <section id="aboutus" class="testimonials section light-background">
 
@@ -811,7 +935,7 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">QuickStart</span>
+            <span class="sitename">Wingspot</span>
           </a>
           <div class="footer-contact pt-3">
             <p>SLIIT Malabe Campus, </p>
@@ -820,10 +944,10 @@
             <p><strong>Email:</strong> <span>Wingspot@gmail.com</span></p>
           </div>
           <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <!-- <a href=""><i class="bi bi-twitter-x"></i></a> -->
             <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+            <!-- <a href=""><i class="bi bi-instagram"></i></a> -->
+            <!-- <a href=""><i class="bi bi-linkedin"></i></a> -->
           </div>
         </div>
 

@@ -1,16 +1,4 @@
-/**
-* Template Name: QuickStart
-* Template URL: https://bootstrapmade.com/quickstart-bootstrap-startup-website-template/
-* Updated: Jun 29 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
-/* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Nunito",  sans-serif;
@@ -62,7 +50,7 @@
 --------------------------------------------------------------*/
 body {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: #d4edda;
   font-family: var(--default-font);
 }
 
@@ -510,10 +498,11 @@ h6 {
 --------------------------------------------------------------*/
 .footer {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: #bae7c7;
   font-size: 14px;
   padding-bottom: 50px;
   position: relative;
+
 }
 
 .footer .footer-top {
@@ -991,6 +980,21 @@ section,
   justify-content: center;
   transition: ease-in-out 0.3s;
 }
+
+/* Add these styles to your stylesheet */
+.feature-item, .features-item {
+  border: 2px solid green; /* Green border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 128, 0, 0.2); /* Greenish shadow effect */
+  padding: 15px; /* Add some padding for better spacing */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.feature-item:hover, .features-item:hover {
+  transform: translateY(-5px); /* Slight upward movement on hover */
+  box-shadow: 0 8px 16px rgba(0, 128, 0, 0.4); /* More pronounced shadow on hover */
+}
+
 
 .featured-services .service-item .icon i {
   color: var(--accent-color);
@@ -1963,9 +1967,11 @@ section,
   background: white;
   border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 20px;
   margin: 10px 0;
   position: relative;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .timeline-content {
@@ -1989,4 +1995,35 @@ section,
   font-size: 24px; /* Adjust size for visibility */
   margin: 10px 0; /* Add margin for spacing */
   color: #007bff; /* Color of the arrows */
+}
+
+
+
+.timeline-item:hover {
+  background-color: #bae7c7;; /* Change to the color you prefer on hover */
+}
+
+
+
+.card {
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.icon img {
+  width: 60px;
+  height: auto;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.border-button a {
+  text-decoration: none;
 }

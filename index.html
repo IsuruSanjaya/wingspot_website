@@ -372,6 +372,38 @@
 
     </section><!-- /Features Details Section -->
 
+    <section id="methodology" class="about section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-12 content" data-aos="fade-up" data-aos-delay="100">
+            <h3>Methodology</h3>
+
+            <div >
+              <img src="assets/img/System Diagram.jpg"  width="1500px" height="800px">
+            </div>
+            <br>
+            <p style="text-align: justify;">
+              The bird monitoring mobile app leverages IoT, AI, and behavioral analysis to enhance bird research on Adam’s Bridge Island. Camouflaged IoT devices capture high-resolution images of birds and transmit metadata (e.g., time and location) using LoRa modules. These images are processed by a YOLOv8 model for real-time bird detection, while a Few-Shot Learning model (CLIP) classifies known species (Red-wattled lapwing, Indian thick-knee, black-winged stilt) and for unknown birds, the image is first analyzed by the OpenAI Multimodal Vision API to suggest a possible name. Simultaneously, the image is uploaded to a dedicated Facebook group for bird researchers and enthusiasts, where users can provide further identification through comments. These comments are then scraped using Apify, and a Named Entity Recognition (NER) model analyzes them. The results from both the API and community feedback are compared to determine the final name of the bird, which is then displayed for the user.
+               <br>              
+                <br>
+                Additionally, the app performs multi-modal behavioral analysis by combining video and audio data to detect the behavioral states (agitated or relaxed) of red-wattled lapwings. Yolov8 and InceptionResNetv2 models detect birds and classify visual behaviors respectively, while YamNet combined with logic Regression processes audio cues, with a fusion of both outputs for accuracy. In addition to the broader capabilities of the app, the system employs YOLOv8 to detect eggs, hatchlings, and birds, classifying behaviors like Incubation, Attention, and Unattended based on proximity. It tracks behavior durations and logs egg and hatchling counts, calculating egg hatching success over time. These metrics are then made accessible to users through the mobile app interface, providing a comprehensive tool for monitoring and analyzing avian reproductive behaviors, supporting both researchers and bird enthusiasts in their efforts to monitor and protect bird species.
+            </p>
+            
+
+          </div>
+
+         
+
+        </div>
+
+      </div>
+    </section><!-- /About Section -->
+
+    <br>              
+    <br>
     <!-- Services Section -->
     <section id="technologies" class="services section light-background">
 
@@ -890,35 +922,28 @@
           </div><!-- End Google Maps -->
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="400">
+            <form id="contactForm" data-aos="fade-up" data-aos-delay="400">
               <div class="row gy-4">
-
                 <div class="col-md-6">
                   <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
                 </div>
-
-                <div class="col-md-6 ">
+                <div class="col-md-6">
                   <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
                 </div>
-
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  <input type="text" class="form-control" name="mobile" placeholder="Mobile" required="">
                 </div>
-
                 <div class="col-md-12">
                   <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
                 </div>
-
                 <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
+                  <button type="submit" id="submitButton">Send Message</button>
                 </div>
-
               </div>
+              <!-- Loader -->
+              <div id="loader" class="loader" style="display: none;"></div>
             </form>
+            
           </div><!-- End Contact Form -->
 
         </div>
@@ -1015,6 +1040,40 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <script>
+    emailjs.init("zJI34CCej7cXD0vw_"); // Replace with your actual User ID
+  
+    // Handle form submission
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent default form submission
+  
+      // Show the loader
+      document.getElementById('loader').style.display = 'block';
+      document.getElementById('submitButton').disabled = true;
+  
+      // Send the form data using EmailJS
+      emailjs.sendForm('service_oe0nmqq', 'template_lsha87n', this)
+        .then(function(response) {
+          // Hide the loader
+          document.getElementById('loader').style.display = 'none';
+          document.getElementById('submitButton').disabled = false;
+  
+          alert('Message sent successfully!', response.status, response.text);
+        }, function(error) {
+          // Hide the loader
+          document.getElementById('loader').style.display = 'none';
+          document.getElementById('submitButton').disabled = false;
+  
+          alert('Failed to send the message. Please try again.', error);
+        });
+    });
+  </script>
+  
+
+  <!-- Scripts -->
 
 </body>
 
